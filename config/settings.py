@@ -48,7 +48,7 @@ class Config:
             s3_bucket=os.getenv("AWS_S3_BUCKET","")
         )
         self.datapipeline = DatapipelineConfig(
-            cities=os.getenv("CITIES","").split(",")
+            cities=os.getenv("CITIES","").split(";")
         )
 
     def validate(self) -> bool:
