@@ -1,6 +1,6 @@
 import psycopg2
 from typing import List, Dict
-from config.settings import config
+from src.settings import config
 
 class PostgresLoader:
     def __init__(self):

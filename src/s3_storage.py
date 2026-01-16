@@ -2,7 +2,7 @@ import os
 import json
 from datetime import datetime
 import boto3
-from config.settings import config
+from src.settings import config
 
 class WeatherS3Storage:
     def __init__ (self, storage_path: str = "/tmp/weather_data", use_s3: bool = False):

@@ -1,5 +1,5 @@
 import requests
-from config.settings import config
+from src.settings import config
 from typing import Optional
 
 class WeatherExtractor:

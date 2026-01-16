@@ -1,7 +1,7 @@
-from extract.weather_extractor import WeatherExtractor
-from storage.s3_storage import WeatherS3Storage
-from transform.transform_data import WeatherDataTransformer
-from loader.postgres_loader import PostgresLoader
+from src.weather_extractor import WeatherExtractor
+from src.s3_storage import WeatherS3Storage
+from src.transform_data import WeatherDataTransformer
+from src.postgres_loader import PostgresLoader
 
 extract_weather = WeatherExtractor()
 s3_storage = WeatherS3Storage()
