@@ -37,9 +37,9 @@ class Config:
         self.postgres = PostgresConfig(
             user=os.getenv("POSTGRES_USER",""),
             password=os.getenv("POSTGRES_PASSWORD",""),
-            host=os.getenv("POSTGRES_HOST","localhost"),
-            port=int(os.getenv("POSTGRES_PORT","5432")),
-            database=os.getenv("POSTGRES_DB","weather_db")
+            host=os.getenv("POSTGRES_HOST",""),
+            port=int(os.getenv("POSTGRES_PORT","")),
+            database=os.getenv("POSTGRES_DB","")
         )
         self.aws = AWSConfig(
             access_key=os.getenv("AWS_ACCESS_KEY",""),

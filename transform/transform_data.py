@@ -15,7 +15,7 @@ class WeatherDataTransformer:
                 'humidity': data['main']['humidity'],
                 'pressure': data['main']['pressure'],
                 'wind_speed': data['wind']['speed'],
-                'description': data['weather'][0]['description'],
+                'weather_description': data['weather'][0]['description'],
                 'recorded_at': datetime.now().strftime("%Y-%m-%d %H:%M")
             }
             weather_records.append(weather_record)
