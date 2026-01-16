@@ -42,10 +42,10 @@ class Config:
             database=os.getenv("POSTGRES_DB","")
         )
         self.aws = AWSConfig(
-            access_key=os.getenv("AWS_ACCESS_KEY",""),
-            secret_key=os.getenv("AWS_SECRET_KEY",""),
+            access_key=os.getenv("AWS_ACCESS_KEY_ID",""),
+            secret_key=os.getenv("AWS_SECRET_ACCESS_KEY",""),
             region=os.getenv("AWS_REGION",""),
-            s3_bucket=os.getenv("AWS_S3_BUCKET","")
+            s3_bucket=os.getenv("AWS_S3_BUCKET_NAME","")
         )
         self.datapipeline = DatapipelineConfig(
             cities=os.getenv("CITIES","").split(";")
