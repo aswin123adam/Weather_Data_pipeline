@@ -1,3 +1,5 @@
+### FOR TESTING PURPOSES ONLY
+
 from src.settings import config
 
 print("Weather API Key:", config.weather_config.api_key[:10] + "xxx" if config.weather_config.api_key else "Not Set")
